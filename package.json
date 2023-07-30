@@ -1,6 +1,6 @@
 {
   "name": "storybook-react-live-decorator",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "public": true,
   "description": "react-live decorator for Storybook 6+ | renders story as react-live with given code",
   "main": "lib",
