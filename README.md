@@ -2,8 +2,8 @@
 
 [react-live](https://github.com/FormidableLabs/react-live) decorator for [Storybook](https://storybook.js.org/) v6+
 
-![npm](https://img.shields.io/npm/v/storybook-react-live-decorator)
-![NPM](https://img.shields.io/npm/l/storybook-react-live-decorator)
+[![npm](https://img.shields.io/npm/v/storybook-react-live-decorator)](https://www.npmjs.com/package/storybook-react-live-decorator)
+[![NPM](https://img.shields.io/npm/l/storybook-react-live-decorator)](https://www.npmjs.com/package/storybook-react-live-decorator)
 
 ## Installation
 
@@ -34,11 +34,13 @@ export const LiveEdit = {
 
 All props accepted by [\<LiveProvider /\>](https://github.com/FormidableLabs/react-live#liveprovider-) and:
 
-| Name       | PropType         |Description|
-|------------|------------------|---|
-| theme      | PropTypes.object |A `prism-react-renderer` existing theme or theme object. See more [here](https://github.com/FormidableLabs/prism-react-renderer#theming)
-| fontFamily | PropTypes.string | css font-family to use in the edirot default `monospace` 
-| debug      | PropTypes.bool   | Logs whatever goes through decorator into _console.log_
+| Name       | PropType         | Description                                                                                                                               |
+|------------|------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| code       | PropTypes.string | Code string                                                                                                                               
+| scope      | PropTypes.object | scope object                                                                                                                              
+| theme      | PropTypes.object | A `prism-react-renderer` existing theme or theme object. See more [here](https://github.com/FormidableLabs/prism-react-renderer#theming)  
+| fontFamily | PropTypes.string | css font-family to use in the edirot default `monospace`                                                                                  
+| debug      | PropTypes.bool   | Logs whatever goes through decorator into _console.log_                                                                                   
 
 ## Extend globally via `.storybook/preview.js`
 
@@ -50,7 +52,8 @@ const preview = {
         reactLive: {
             theme: themes.dracula, // import from `prism-react-renderer`
             scope: {Button, Wrapper},
-            debug: false
+            debug: false,
+            fontFamily: 'monospace'
         }
     }
 };
