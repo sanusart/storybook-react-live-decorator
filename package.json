@@ -1,0 +1,45 @@
+{
+  "name": "storybook-react-live-decorator",
+  "version": "1.0.0",
+  "public": true,
+  "description": "react-live decorator for Storybook 6+ | renders story as react-live with given code",
+  "main": "lib",
+  "scripts": {
+    "build": "babel index.js -o lib/index.js",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanusart/storybook-react-live.git"
+  },
+  "keywords": [
+    "storybook-decorator",
+    "code",
+    "source",
+    "storybook",
+    "react-live"
+  ],
+  "storybook": {
+    "displayName": "Storybook react-live decorator",
+    "supportedFrameworks": [
+      "react"
+    ]
+  },
+  "author": "Sasha Khamkov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanusart/storybook-react-live/issues"
+  },
+  "homepage": "https://github.com/sanusart/storybook-react-live#readme",
+  "dependencies": {
+    "prism-react-renderer": "2.0.6",
+    "react-live": "^4.1.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.22.5"
+  }
+}
