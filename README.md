@@ -2,9 +2,8 @@
 
 [react-live](https://github.com/FormidableLabs/react-live) decorator for [Storybook](https://storybook.js.org/) v6+
 
-![npm](https://img.shields.io/npm/v/storybook-react-live)
-![NPM](https://img.shields.io/npm/l/storybook-react-live)
-
+![npm](https://img.shields.io/npm/v/storybook-react-live-decorator)
+![NPM](https://img.shields.io/npm/l/storybook-react-live-decorator)
 
 ## Installation
 

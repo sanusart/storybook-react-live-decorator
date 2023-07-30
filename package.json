@@ -11,10 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sanusart/storybook-react-live.git"
+    "url": "git+https://github.com/sanusart/storybook-react-live-decorator.git"
   },
   "keywords": [
-    "storybook-decorator",
+    "storybook-addons",
+    "decorator",
     "code",
     "source",
     "storybook",
