@@ -5,6 +5,10 @@
 [![npm](https://img.shields.io/npm/v/storybook-react-live-decorator)](https://www.npmjs.com/package/storybook-react-live-decorator)
 [![NPM](https://img.shields.io/npm/l/storybook-react-live-decorator)](https://www.npmjs.com/package/storybook-react-live-decorator)
 
+## Screenshot
+
+![Screenshot](https://raw.githubusercontent.com/sanusart/storybook-react-live-decorator/main/images/show.png)
+
 ## Installation
 
 `npm i -D storybook-react-live-decorator`

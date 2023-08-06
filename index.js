@@ -8,6 +8,7 @@ export const ReactLiveDecorator = ({
    fontFamily = 'monospace',
    theme = themes.nightOwl,
    debug,
+   errorPosition = 'top',
    ...rest
  }) => {
   return (story, context) => {
@@ -23,16 +24,16 @@ export const ReactLiveDecorator = ({
     return (
       <LiveProvider
         code={code}
-        scope={context?.parameters?.reactLive?.scope || scope}
-        theme={context?.parameters?.reactLive?.theme || theme}
+        scope={scope || context?.parameters?.reactLive?.scope}
+        theme={theme || context?.parameters?.reactLive?.theme}
         {...rest}
       >
         <LivePreview/>
-        <LiveError/>
-        <br/>
-        <div style={{fontFamily: context?.parameters?.reactLive?.fontFamily || fontFamily}}>
+        {errorPosition === 'top' || context?.parameters?.reactLive?.errorPosition === 'top' && <><LiveError/><br/></>}
+        <div style={{fontFamily: fontFamily || context?.parameters?.reactLive?.fontFamily}}>
           <LiveEditor/>
         </div>
+        {errorPosition === 'bottom'  || context?.parameters?.reactLive?.errorPosition === 'bottom' && <><br/><LiveError/></>}
       </LiveProvider>
     );
   };

@@ -1,0 +1,22 @@
+name: Deploy storybook to GH Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Build and deploy Storybook
+        uses: peaceiris/actions-gh-pages@v3
+      - run: npm ci
+      - run: npm run build-storybook
+        with:
+          node-version: 16
+          publish_dir: ./storybook-static
