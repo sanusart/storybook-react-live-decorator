@@ -31,6 +31,7 @@ export const ReactLiveDecorator = ({
         <LivePreview/>
         {errorPosition === 'top' || context?.parameters?.reactLive?.errorPosition === 'top' && <><LiveError/><br/></>}
         <div style={{fontFamily: fontFamily || context?.parameters?.reactLive?.fontFamily}}>
+          <br/>
           <LiveEditor/>
         </div>
         {errorPosition === 'bottom'  || context?.parameters?.reactLive?.errorPosition === 'bottom' && <><br/><LiveError/></>}

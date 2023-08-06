@@ -1,0 +1,25 @@
+.storybook-button--primary {
+  border: 1px solid #FF6347FF;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #FF6347FF;
+  color: #fff;
+}
+
+.storybook-button--primary:hover {
+  cursor: pointer;
+  background-color: #FF6347F0;
+}
+
+.storybook-button--secondary {
+  border: 1px solid #FF6347FF;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #fff;
+  color: #FF6347FF;
+}
+
+.storybook-button--secondary:hover {
+  cursor: pointer;
+  background-color: #FF634744;
+}
