@@ -9,6 +9,8 @@
 
 ![Screenshot](https://raw.githubusercontent.com/sanusart/storybook-react-live-decorator/main/images/show.png)
 
+## [Demo](https://sanusart.github.io/storybook-react-live-decorator)
+
 ## Installation
 
 `npm i -D storybook-react-live-decorator`
